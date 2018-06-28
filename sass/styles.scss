@@ -1,0 +1,102 @@
+@import "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
+
+
+
+nav .navbar-brand {
+    img {
+        margin-top: -20px;
+        margin-bottom: -20px;
+        position: relative;
+        padding: 4px;
+        top: -4px;
+    }
+}
+nav.navbar {
+    background-color: rgb(243, 243, 243);
+    .navbar-brand {
+        font-weight: bold;
+    }
+    -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+
+}
+
+
+#wrapper-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    -webkit-box-shadow: 0px -1px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -1px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px -1px 10px 1px rgba(0,0,0,0.2);
+    padding: 10px 0 0 0;
+    z-index: 10;
+    address {
+        margin: 0;
+    }
+    p {
+        font-size: .8em;
+        line-height: 1.05em;
+        opacity: 0.85;
+    }
+}
+
+
+
+
+
+
+
+.site-main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.date-published {
+    color: $light;
+}
+
+// for image gallery
+.rbs_gallery_button {
+    display: none;
+}
+
+.page {
+    h1 {
+        margin-bottom: 1.2em;
+        margin-top: 1.2em;
+    }
+}
+.post-single {
+}
+
+.post-in-list {
+    .understrap-read-more-link {
+        float: right;
+    }
+    margin-bottom: 2.5em;
+    img {
+        padding: 12px;
+        max-width: 350px;
+        float: left;
+    }
+}
+@media (max-width: 576px) {
+    .post-in-list {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.understrap-read-more-link {
+    opacity: 0.7;
+    background-color: white;
+    color: $primary;
+    transition: all .15s;
+}
+.understrap-read-more-link:hover {
+    opacity: 1;
+    background-color: white;
+    color: $primary;
+}
