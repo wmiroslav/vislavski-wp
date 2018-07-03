@@ -7,7 +7,7 @@
 
 ?>
 
-<article class="post-in-list" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article class="post-in-list clearfix" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
